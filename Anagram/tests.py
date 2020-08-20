@@ -3,7 +3,6 @@ from AnagramCheck import Solution
 
 obj = Solution()
 
-
 class AnagramTests(unittest.TestCase):
 
     def test_1(self):
