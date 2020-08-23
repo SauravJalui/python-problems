@@ -1,25 +1,35 @@
-#can use the code below if we have to show the numbers as well.
+# #can use the code below if we have to show the numbers as well.
 # class Solution():
-#     def pair_sum(self,arr, k):
-
-#         #edge case check
-#         if len(arr) < 2:
+#     def pair_sum(self, arr,k):
+        
+#         if len(arr)<2:
 #             return
-
-#         #sets for tracking
+        
+#         # Sets for tracking
 #         seen = set()
 #         output = set()
-
+        
+#         # For every number in array
 #         for num in arr:
-#             target = k - num
+            
+#             # Set target difference
+#             target = k-num
+            
+#             # Add it to set if target hasn't been seen
 #             if target not in seen:
 #                 seen.add(num)
+            
 #             else:
-#                 output.add( ((min(num, target)), max(num, target)) )
+#                 # Add a tuple with the corresponding pair
+#                 output.add( (min(num,target),  max(num,target)) )
+        
+        
+#         # FOR TESTING
+#         return len(output)
+#         # Nice one-liner for printing output
+#         #return '\n'.join(map(str,list(output)))
 
-#         print (len(output))
-
-#since we only need the number of pairs, we can use the below function
+# since we only need the number of pairs, we can use the below function
 class Solution():
     def pair_sum(self,arr, k):
         
